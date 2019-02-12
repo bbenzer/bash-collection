@@ -1,7 +1,6 @@
 #!/bin/bash
  
- output=$(sudo cat /etc/sudoers | grep "ALL=(ALL)" | grep -v "root" | grep -v "wheel" | grep -v "ratm" | grep -v "tesla" |grep -v "payan" | grep -v "dogfish" | grep -v "ADM
- INS" | grep -v "#")
+ output=$(sudo cat /etc/sudoers | grep "ALL=(ALL)" | grep -v "root" | grep -v "wheel"  | grep -v "#")
  
  
  host=`hostname`
